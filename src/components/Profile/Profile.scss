@@ -1,0 +1,45 @@
+.profile {
+    background-color: #ffff;
+    border-radius: 6px;
+    width: 100%;
+    display: inline-block;
+    .profile_name {
+        line-height: 18px;
+        padding: 20px;
+        .name {
+            text-transform: uppercase;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 13px;
+            color: #777;
+        }
+    }
+
+    .profile_image {
+        margin-top: -10px;
+        -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%) !important;
+        clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%) !important;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .profile_information {
+        top: 0;
+        left: 0;
+        margin: -40px 10px 30px;
+        .timeLine_content {
+            margin-top: 0px;
+            margin-bottom: 8px;
+        }
+        .button_container {
+            width: 100%;
+            display: flex !important;
+            justify-content: center ;
+            margin-top: 0px;
+        }
+    }
+}
