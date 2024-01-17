@@ -1,21 +1,26 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { HomeRounded, Telegram } from '@material-ui/icons';
+import { HomeRounded, Telegram } from '@mui/icons-material';
 import { Router as withRouter, NavLink } from 'react-router-dom';
 import resumeData from '../../utils/resumeData';
 import CustomButton from '../Buttons/Button';
 import './Header.scss';
+import { useLocation } from 'react-router-dom';
+
 
 const Header = ({props}) => {
-    const pathName = props?.location?.pathName;
+    // const pathName = props?.location?.pathName;
+    let location = useLocation();
 
+    
+    
     return (
         <Navbar expand="lg" sticky="top" className="header">
             {/* Home Link  */}
             <Nav.Link as={NavLink} to="/">
                 <Navbar.Brand className='header_home'>
-                    <HomeRounded />
+                    {/* <HomeRounded /> */}
                 </Navbar.Brand>
 
                 <Navbar.Toggle />
@@ -23,9 +28,9 @@ const Header = ({props}) => {
                 <Navbar.Collapse>
                     <Nav>
                         {/* Resume Link  */}
-                        <Nav.Link as={NavLink} to='/' className={pathName == "/" ? "header_link_active" : "header_link"}>Resume</Nav.Link>
+                        <Nav.Link as={NavLink} to='/' className={location.pathname == "/" ? "header_link_active" : "header_link"}>Resume</Nav.Link>
                         {/* Portfolio Link  */}
-                        <Nav.Link as={NavLink} to='/portfolio' className={pathName == "/portfolio" ? "header_link_active" : "header_link"}>Portfolio</Nav.Link>
+                        <Nav.Link as={NavLink} to='/portfolio' className={location.pathname == "/portfolio" ? "header_link_active" : "header_link"}>Portfolio</Nav.Link>
 
                         <div className='header_right'>
                             {Object.keys(resumeData.socials).map((key) => (
@@ -42,5 +47,5 @@ const Header = ({props}) => {
     );
 }
 
-export default withRouter(Header);
-// export default Header;
+// export default withRouter(Header);
+export default Header;

@@ -1,8 +1,9 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import './Profile.scss';
 import resumeData from '../../utils/resumeData';
-import { GetApp, PersonOutlineOutlined } from '@material-ui/icons';
+import { GetApp, PersonOutlineOutlined } from '@mui/icons-material';
+
 import { TimelineContent, TimelineItem } from '@mui/lab';
 import CustomTimeLine, {CustomTimeLineSeparator} from '../Timeline/CustomTimeLine';
 import CustomButton from '../Buttons/Button';
