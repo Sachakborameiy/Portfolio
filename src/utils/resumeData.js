@@ -1,4 +1,4 @@
-import { Facebook, Instagram, LinkedIn } from "@material-ui/icons";
+// import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 
 export default {
     name: 'Vuth Sachakborameiy',
@@ -14,18 +14,18 @@ export default {
         facebook: {
             link: 'https://www.facebook.com/profile.php?id=100012410854694',
             text: 'My Facebook Profile',
-            icon: <Facebook/>,
+            // icon: <Facebook/>,
         },
 
         instagram: {
             link: 'https://www.instagram.com/borameiy/',
             text: 'My Instagram Profile',
-            icon: <Instagram/>,
+            // icon: <Instagram/>,
         },
         facebook: {
             link: 'https://www.linkedin.com/in/vuth-sachakborameiy-371235195/',
             text: 'My Linkedin Profile',
-            icon: <LinkedIn/>,
+            // icon: <LinkedIn/>,
         }
     }
 }

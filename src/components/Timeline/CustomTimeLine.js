@@ -5,7 +5,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 // import { Work } from '@material-ui/icons';
 import './Timeline.scss';
 
