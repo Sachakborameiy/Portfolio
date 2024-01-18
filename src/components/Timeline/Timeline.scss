@@ -30,7 +30,8 @@
     .timeLine_dot {
         color: black !important;
         background-color: var(--main-color);
-        padding: 2px !important;
+        padding: 2.7px !important;
+        border: 2px solid lightgoldenrodyellow;
     }
 
     .MuiTimelineConnector-root {
@@ -41,7 +42,7 @@
 
         .MuiSvgIcon-root {
             font-size: 20px;
-            color: darkslategray;
+            color: #000 !important;
         }
     }
         

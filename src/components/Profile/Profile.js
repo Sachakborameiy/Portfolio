@@ -40,7 +40,7 @@ const Profile = ({ text, icon }) => {
             </div>
 
             <figure className='profile_image'>
-                <img src={require("../../assets/images/profile-1.jpg")} alt=''/>
+                <img src={require("../../assets/images/profile-2.jpg")} alt=''/>
             </figure>
 
             <div className='profile_information'>

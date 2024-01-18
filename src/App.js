@@ -11,18 +11,24 @@ function App() {
   return (
     <Container className={"top_60"}>
       <Grid container spacing={7}>
-        <Grid item xs={12} sm={12} md={4} lg={3}>
+        <Grid item xs={12} sm={12} md={4} lg={3} style={{ backgroundColor: "#1E1E1E" }}>
           <Profile />
         </Grid>
-        <Grid item xs style={{ backgroundColor: "red" }}>
+        
+        <Grid item xs style={{ backgroundColor: "#1E1E1E" }}>
+
           <Router>
             <Header />
-            <Routes>
-              <Route path="/portfolio" element={<Portfolio />}></Route>
-              <Route path="/" element={<Resume />}></Route>
-            </Routes>
+            <div className="main-content">
+              <Routes>
+                <Route path="/portfolio" element={<Portfolio />}></Route>
+                <Route path="/" element={<Resume />}></Route>
+              </Routes>
+            </div>
           </Router>
+
           <Footer />
+        
         </Grid>
       </Grid>
     </Container>
