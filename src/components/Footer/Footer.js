@@ -5,23 +5,20 @@ import resumeData from '../../utils/resumeData';
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='footer mb_20'>
                 <div className='footer_left'>
                     <Typography className="footer_name">
-                    {resumeData.name}
+                    {resumeData.latinName}
                     </Typography>
                 </div>
                 <div className='footer_right'>
                     <Typography className="footer_copyright">
-                        Design and developed by {"Beyramo"}
+                    &#169; 2024 design and developed by &nbsp;
                         <a href='/' target='_blank'>
-                            Vuth Sachakborameiy
+                            { resumeData.name }
                         </a>
                         <br/>
-                        Clone idea from {" "}
-                        <a href='https//www.google.com' target='_blank'>
-                         google
-                        </a>
+                        Clone idea from {" "} tavonline
                     </Typography>
                 </div>
             </div>

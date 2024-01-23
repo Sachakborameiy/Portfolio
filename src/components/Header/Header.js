@@ -4,15 +4,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { HomeRounded, Telegram } from '@mui/icons-material';
 import { Router as withRouter, NavLink } from 'react-router-dom';
 import resumeData from '../../utils/resumeData';
-import CustomButton from '../Buttons/Button';
+import TelegramButton from '../Buttons/TelegramButton';
+// import { TelegramButton } from '@mui/material';
 import './Header.scss';
 import { useLocation } from 'react-router-dom';
 
 
 const Header = () => {
 
+    const TelegramChatUrl = "https://t.me/Borameii"; 
+
     let location = useLocation();
-    
+
     return (
         <Navbar expand="lg" sticky="top" className="header">
             {/* Home Link  */}
@@ -32,9 +35,12 @@ const Header = () => {
                         Resume
                     </Nav.Link>
                     
-                    {/* Portfolio Link  */}
+                    {/* Contact Link  */}
                     <Nav.Link as={NavLink} to='/portfolio' className={location.pathname == "/portfolio" ? "header_link_active" : "header_link"}>
                         Portfolio
+                    </Nav.Link>
+                    <Nav.Link as={NavLink} to='/contact' className={location.pathname == "/contact" ? "header_link_active" : "header_link"}>
+                        Contact
                     </Nav.Link>
 
                 </Nav>
@@ -45,7 +51,8 @@ const Header = () => {
                             {resumeData.socials[key].icon}
                         </a>
                     ))}
-                    <CustomButton text={'Hire Me'} icon={<Telegram/>}/>
+                    {/* <CustomButton text={"Hire Me"}  icon={<Telegram/>}/> */}
+                    <TelegramButton text={"Hire Me"}  icon={<Telegram/>}/>
                 </div>
             </Navbar.Collapse>
         </Navbar>

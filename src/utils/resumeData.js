@@ -3,14 +3,15 @@ import WebIcon from '@mui/icons-material/Web';
 import GitHubIcon from '@mui/icons-material/Web';
 
 export default {
-    name: 'Vuth Sachakborameiy',
+    name: 'VUTH. Sachakborameiy',
+    latinName: 'Sachakborameiy VUTH.',
     title: 'Full stack developer',
     status: 'Single',
     nationality: 'Khmer',
     birthday: '07-Aug-1997',
     phone: '+(855) 92 208 280',
     email: 'borameiy.vs@gmail.com',
-    address: 'St. 05, Sangkat Chom Chao, Khan Dangkor, Phnom Penh. ',
+    address: 'St. 05, Sangkat Chom Chao​ I, Khan Dangkor, Phnom Penh. ',
 
     socials: {
         facebook: {
@@ -118,7 +119,7 @@ export default {
         {
             school: 'National University of Management',
             date: "2015-2019",
-            title: "Certificated Bachelor Degree of English Literature at National University of Management. English Teacher as Business.",
+            title: "Certificated Bachelor Degree of English of Education at National University of Management. English Teacher as Business.",
         },
         {
             school: "Koh Kong Hight School",
@@ -188,10 +189,10 @@ export default {
     projects: [
         {
             tag: "React",
-            image: "https//www.google.com",
+            image: './assets/website.jpg',
             title: "Project1",
-            caption: "A short description",
-            description: "This is desc1",
+            caption: "A short description ",
+            description: "This is desc1 A short description A short description",
             links: [
                 {
                     link: "https//www.google.com", icon: <WebIcon />
@@ -206,10 +207,10 @@ export default {
         },
         {
             tag: "Javascript",
-            image: "https//www.google.com",
+            image: "https://imgv3.fotor.com/images/share/Free-pink-gradient-aesthetic-background-from-Fotor.jpg",
             title: "Project1",
             caption: "A short description",
-            description: "This is desc1",
+            description: "This is desc1 A short description A short description",
             links: [
                 {
                     link: "https//www.google.com", icon: <WebIcon />
@@ -224,10 +225,46 @@ export default {
         },
         {
             tag: "UX/UI",
-            image: "https//www.google.com",
+            image: "https://imgv3.fotor.com/images/share/Free-pink-gradient-aesthetic-background-from-Fotor.jpg",
             title: "Project1",
             caption: "A short description",
-            description: "This is desc1",
+            description: "This is desc1 A short description A short description",
+            links: [
+                {
+                    link: "https//www.google.com", icon: <WebIcon />
+                },
+                {
+                    link: "https//www.google.com", icon: <GitHubIcon />
+                },
+                {
+                    link: "https//www.google.com", icon: <WebIcon />
+                },
+            ]
+        },
+        {
+            tag: "Javascript",
+            image: "https://imgv3.fotor.com/images/share/Free-pink-gradient-aesthetic-background-from-Fotor.jpg",
+            title: "Project1",
+            caption: "A short description",
+            description: "This is desc1 A short description A short description",
+            links: [
+                {
+                    link: "https//www.google.com", icon: <WebIcon />
+                },
+                {
+                    link: "https//www.google.com", icon: <GitHubIcon />
+                },
+                {
+                    link: "https//www.google.com", icon: <WebIcon />
+                },
+            ]
+        },
+        {
+            tag: "UX/UI",
+            image: "https://imgv3.fotor.com/images/share/Free-pink-gradient-aesthetic-background-from-Fotor.jpg",
+            title: "Project1",
+            caption: "A short description",
+            description: "This is desc1 A short description A short description",
             links: [
                 {
                     link: "https//www.google.com", icon: <WebIcon />

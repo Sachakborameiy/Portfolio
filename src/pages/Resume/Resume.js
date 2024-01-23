@@ -5,14 +5,15 @@ import CustomTimeLine, { CustomTimeLineSeparator } from '../../components/Timeli
 import { Work } from '@mui/icons-material';
 import { TimelineItem, TimelineContent, TimelineDot } from "@mui/lab";
 import './Resume.scss';
-import CustomButton from '../../components/Buttons/Button';
+import SchoolIcon from '@mui/icons-material/School';
+import Contact from '../Contact/Contact';
 
 const Resume = () => {
     return (
         <>
             {/* about me  */}
-            <Grid container className="section pb_45 pt_45">
-                <Grid item className='section_title mb_30'>
+            <Grid container className="section">
+                <Grid item className='section_title mb_20'>
                     <span></span>
                     <h6 className='section_title_text'>About Me</h6>
                 </Grid>
@@ -24,7 +25,7 @@ const Resume = () => {
 
 
             {/* education and experience  */}
-            <Grid container className="section pb_45">
+            <Grid container className="section top_30 pb_45">
                 <Grid item className='section_title mb_30'>
                     <span></span>
                     <h6 className='section_title_text'>Resume</h6>
@@ -61,7 +62,7 @@ const Resume = () => {
 
                         {/* Education */}
                         <Grid item sm={12} md={6}>
-                            <CustomTimeLine title={resumeData.education} sx={{fontWeight: "bolder !important"}} icon={<Work/>} style={{fontSize: '8px !important', color: '#787878'}}>
+                            <CustomTimeLine title={resumeData.education} sx={{fontWeight: "bolder !important"}} icon={<SchoolIcon/>} style={{fontSize: '8px !important', color: '#787878'}}>
                                 {resumeData.edu.map((edu) => (
                                     <TimelineItem>
                                         <CustomTimeLineSeparator/>
@@ -73,7 +74,7 @@ const Resume = () => {
                                     </TimelineItem>
                                 ))}
                             </CustomTimeLine>
-                            <CustomTimeLine title={resumeData.training} sx={{fontWeight: "bolder !important"}} icon={<Work/>} style={{fontSize: '8px !important', color: '#787878'}}>
+                            <CustomTimeLine title={resumeData.training} sx={{fontWeight: "bolder !important"}} icon={<SchoolIcon/>} style={{fontSize: '8px !important', color: '#787878'}}>
                                 {resumeData.ot.map((other) => (
                                     <TimelineItem>
                                         <CustomTimeLineSeparator/>
@@ -144,103 +145,8 @@ const Resume = () => {
                     </Grid>
                 </Grid>
             </Grid>
-            {/* Contact  */}
-            <Grid container spacing={5} className="section pt_45 pb_45">
-                {/* Contact Form   */}
-                <Grid item xs={12} lg={7}>
-                    <Grid container>
-                        <Grid item className='section_title mb_30'>
-                            <span></span>
-                            <h6 className='section_title_text'>Contact Form</h6>
-                        </Grid>
-
-                        <Grid item xs={12}>
-                            <Grid container spacing={3}>
-                                <Grid item xs={12} sm={6}>
-                                    <TextField
-                                      id=""
-                                      label="Name"
-                                      fullWidth
-                                      value={'Enter Name'}
-                                      onChange={0}
-                                      variant='outlined'
-                                      />
-                                </Grid>
-                                <Grid item xs={12} sm={6}>
-                                    <TextField
-                                      id=""
-                                      label="Email"
-                                      fullWidth
-                                      value={'Enter Email'}
-                                      onChange={0}
-                                      variant='outlined'
-                                      />
-                                </Grid>
-                                <Grid item xs={12}>
-                                    <TextField
-                                      id=""
-                                      label="Message"
-                                      fullWidth
-                                      value={'Enter Message'}
-                                      onChange={0}
-                                      multiline 
-                                      rows={4}
-                                      variant='outlined'
-                                    />
-                                </Grid>
-                                <Grid item xs={12}>
-                                   <CustomButton text={'submit'} />                     
-                                </Grid>
-                            </Grid>
-                        </Grid>
-                    </Grid>                                     
-                </Grid>
-
-                {/* Contact Information  */}
-                <Grid item xs={12} lg={5}>
-                    <Grid container>
-                        <Grid item className='section_title mb_30'>
-                            <span></span>
-                            <h6 className='seaction_title_text'>Contact Information</h6>
-                        </Grid>
-
-                        <Grid item xs={12}>
-                            <Grid container spacing={2}>
-                                <Grid item xs={12}>
-                                    <Typography className='contactInfo_item'>
-                                        <span>Address: </span> {resumeData.address}
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12}>
-                                    <Typography className='contactInfo_item'>
-                                        <span>Phone: </span> {resumeData.phone}
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12}>
-                                    <Typography className='contactInfo_item'>
-                                        <span>Email: </span> {resumeData.email}
-                                    </Typography>
-                                </Grid>
-                            </Grid>
-                        </Grid>   
-
-                        <Grid item xs={12}>
-                            <Grid container className='contactInfo_socialsContainer'>
-                                {
-                                    Object.keys(resumeData.socials).map((key) => (
-                                        <Grid item className='contactInfo_social'>
-                                            <a href={resumeData.socials[key].link}>
-                                                {resumeData.socials[key].icon}
-                                            </a>
-                                        </Grid>
-                                ))}
-                            </Grid>
-                        </Grid>                                   
-                    </Grid>
-
-                </Grid>
-            </Grid>
-
+            
+            <Contact/>
 
         </>
     );
