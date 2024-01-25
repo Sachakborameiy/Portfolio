@@ -15,7 +15,7 @@ const Footer = () => {
                     <Typography className="footer_copyright">
                     &#169; 2024 design and developed by &nbsp;
                         <a href='/' target='_blank'>
-                            { resumeData.name }
+                            { resumeData.latinName }
                         </a>
                         <br/>
                         Clone idea from {" "} tavonline

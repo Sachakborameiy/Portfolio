@@ -1,0 +1,17 @@
+.section {
+    padding: 20px !important;
+    .skill {
+        .skills_title {
+            font-weight: 900;
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 20px;
+        }
+        .skill_description {
+            color: #101010 !important;
+            font-size: 13px;
+            margin-top: 2.5px;
+            font-weight: 600;
+        }
+    }
+}

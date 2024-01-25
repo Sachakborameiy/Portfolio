@@ -24,6 +24,7 @@ body {
   margin-bottom: 30px !important;
 }
 
+
 .p_30 {
   padding: 30px !important;
 }
@@ -38,6 +39,10 @@ body {
 
 .p_50 {
   padding: 50px;
+}
+
+.p_20 {
+  padding: 20px;
 }
 
 .pt_45 {
@@ -78,7 +83,7 @@ body {
 .section_title {
   position: relative;
   display: inline-block;
-  padding: 0 3px;
+  padding: 0 2px;
 }
 
 .section_title > .section_title_text {
@@ -101,8 +106,4 @@ body {
 
 .graybg {
   background: #fafafa;
-}
-
-.section {
-  padding-right: 30px;
 }

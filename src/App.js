@@ -5,8 +5,10 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import Resume from "./pages/Resume/Resume";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact/Contact";
+import Knowledge from "./pages/Knowledge/Knowledge";
+import Hobby from "./pages/Hobby/Hobby";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <div className="main-content" >
               <Routes>
                 <Route path="/portfolio" element={<Portfolio />}></Route>
+                <Route path="/Knowledge" element={<Knowledge />}></Route>
+                <Route path="/Hobby" element={<Hobby />}></Route>
                 <Route path="/contact" element={<Contact />}></Route>
                 <Route path="/" element={<Resume />}></Route>
               </Routes>

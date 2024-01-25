@@ -12,7 +12,7 @@ const Portfolio = () => {
             {/* Title  */}
             <Grid item className="section_title mb_20"> 
                 <span></span>
-                <h6 className='section_title_text'>Portfolio</h6>
+                <h6 className='section_title_text'>Projects</h6>
             </Grid>
 
             {/* Tabs  */}
@@ -26,7 +26,7 @@ const Portfolio = () => {
                         label="All" 
                         value="All" 
                         className={tabValue == "All" ? "customTabs_item active" : "customTabs_item"}/>
-
+                        {/* <img src={require("../../assets/images/Website-Maintenance-Checklist.jpg")} alt=''/> */}
                     {[...new Set(resumeData.projects.map((item) => item.tag ))].map((tag) => (
                         <Tab
                             label={tag}
@@ -42,8 +42,9 @@ const Portfolio = () => {
             </Grid>
 
             {/* Projects  */}
-            <Grid item xs={12}>
-                <Grid container spacing={3}>                    {
+            {/* <Grid item xs={12}>
+                <Grid container spacing={3}>                   
+                {
                         resumeData.projects.map((project) => (
                             <>
                                 {tabValue == project.tag || tabValue == "All" ? (
@@ -60,12 +61,17 @@ const Portfolio = () => {
                                             </Card>
                                         </Grow>
                                     </Grid>
-                                ): null }
+                               ): null }
                             </>
-                        ))}
+                ))}
                 </Grid>
+            </Grid> */}
+            
+            <Grid fullWidth>
+                <div>
+                    <img src={require("../../assets/images/Website-Maintenance-Checklist.jpg")} width={'100%'} alt=''/>
+                </div>
             </Grid>
-
             
             <Dialog 
                 open={projectDialog} 

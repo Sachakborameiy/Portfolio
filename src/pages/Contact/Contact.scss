@@ -1,5 +1,9 @@
 // Contact Section 
 
+form {
+    display: flex;
+}
+
 .contactInfo_item {
     font-size: 14px !important;
     color: #787878;
@@ -22,3 +26,27 @@
 }
 
 // End Contact Sectio 
+
+
+.custom_btn {
+    background-color: var(--main-color) !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border-radius: 50px !important;
+    border: 0 !important;
+    padding: 1px 12px !important;
+    line-height: 35px !important;
+    min-width: 100px !important;
+    outline: none !important;
+
+    span > .btn_text {
+        font-size: 14px !important;
+        text-transform: none !important;
+        text-align: center !important;
+        width: 100%;
+        margin-right: 5px;
+        margin-left: 5px;
+        color: green !important;
+        font-weight: 600 !important;
+    }
+}

@@ -94,40 +94,15 @@
         line-height: 18px !important;
 
         .timeline_dot {
-            border-color: var(--main-color) !important;
+            border-color: red !important;
             padding: 2px !important;
-            margin-right: 5px !important;
+            margin-right: 7px !important;
         }
     }
 
 }
 
 // End Skill 
-
-// Contact Section 
-
-.contactInfo_item {
-    font-size: 14px !important;
-    color: #787878;
-    line-height: 34px !important;
-
-    span {
-        color: black;
-        font-weight: 500;
-    }
-}
-
-.contactInfo_socialsContainer {
-    margin-top: 25px;
-}
-
-.contactInfo_social > a > .MuiSvgIcon-root {
-    font-size: 16px !important;
-    margin-right: 10px;
-    color: black;
-}
-
-// End Contact Sectio 
 
 
 
