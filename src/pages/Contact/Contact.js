@@ -119,9 +119,8 @@ const Contact = () => {
                                         <Button variant="contained" className='custom_btn' onClick={handleSubmit} style={{ color: 'green', fontWeight: '700'}}>
                                             <span className='btn_text'>Send Message</span>
                                         </Button>
-                                        {error && <div style={{ marginLeft: '5px', marginTop: '10px', color: 'red' }}>{error}</div>}
-                                        {message && <div style={{ marginLeft: '5px', marginTop: '10px', color: 'green' }}>{message}</div>}
                                     </Grid>
+
                                 </Grid>
                             </form>
                         </Grid>
@@ -170,6 +169,11 @@ const Contact = () => {
                         </Grid>                                   
                     </Grid>
 
+                </Grid>
+
+                <Grid item xs>
+                    {error && <div style={{ marginLeft: '5px', marginTop: '10px', color: 'red' }}>{error}</div>}
+                    {message && <div style={{ marginLeft: '5px', marginTop: '10px', color: 'green' }}>{message}</div>}
                 </Grid>
             </Grid>
         </div>

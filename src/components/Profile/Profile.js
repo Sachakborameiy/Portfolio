@@ -8,6 +8,7 @@ import CustomTimeLine, {CustomTimeLineSeparator} from '../Timeline/CustomTimeLin
 import CustomButton from '../Buttons/Button';
 
 const CustomTimeLineItem = ({ title, text, link }) => {
+
     return (
         <TimelineItem>
             <CustomTimeLineSeparator />
@@ -31,6 +32,7 @@ const CustomTimeLineItem = ({ title, text, link }) => {
 };
 
 const Profile = ({ text, icon }) => {
+
     return (
         <div className='profile container_shadow'>
             <div className='profile_name'>
@@ -52,8 +54,9 @@ const Profile = ({ text, icon }) => {
                 </CustomTimeLine>
                 <br/>
                 <div className={'button_container'}>
-                    <CustomButton text={'Download My Bio'} icon={<GetApp/>}/>
+                    <CustomButton text={'Download My Bio'} icon={<GetApp/>} />
                 </div>
+
             </div>
         </div>
     );

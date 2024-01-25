@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { HomeRounded, Telegram } from '@mui/icons-material';
-import { Router as NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import resumeData from '../../utils/resumeData';
 import TelegramButton from '../Buttons/TelegramButton';
 import './Header.scss';

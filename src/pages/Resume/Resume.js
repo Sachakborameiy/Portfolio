@@ -7,6 +7,7 @@ import { TimelineItem, TimelineContent } from "@mui/lab";
 import './Resume.scss';
 import SchoolIcon from '@mui/icons-material/School';
 import Knowledge from '../Knowledge/Knowledge';
+import Hobby from '../Hobby/Hobby';
 
 const Resume = () => {
     return (
@@ -133,6 +134,8 @@ const Resume = () => {
             {/* <Contact/> */}
 
             <Knowledge/>
+
+            <Hobby/>
 
         </>
     );
