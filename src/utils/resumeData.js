@@ -66,7 +66,7 @@ export default {
             ],
         },
         {
-            title: 'Senior Web Developer - Ministry of Commerce',
+            title: 'Senior Web Dev - Ministry of Commerce',
             date: 'Dec/2021-Sep/2022',
             description: 'Senior Web Developer, and implemented everything from order management, worked a part of a multi-disciplinary team, and tasks as requested by Leader Project.',
             subDescription: [
