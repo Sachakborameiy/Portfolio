@@ -132,7 +132,7 @@ const Contact = () => {
                     <Grid container>
                         <Grid item className='section_title mb_30'>
                             <span></span>
-                            <h6 className='seaction_title_text'>Contact Information</h6>
+                            <h6 className='section_title_text'>Contact Information</h6>
                         </Grid>
 
                         <Grid item xs={12}>

@@ -7,7 +7,7 @@ import './Knowledge.scss';
 const Knowledge = () => {
     return (
         <>
-            <Grid container spacing={1} className="section graybg">                
+            <Grid container spacing={1} className="section graybg">             
                 {/* skills  */}
                 <Grid container justifyContent={'space-between'} spacing={2}>
                     {

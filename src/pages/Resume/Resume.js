@@ -26,7 +26,7 @@ const Resume = () => {
 
 
             {/* education and experience  */}
-            <Grid container className="section top_30 pb_45">
+            <Grid container className="section top_20 pb_45">
                 <Grid item className='section_title mb_30'>
                     <span></span>
                     <h6 className='section_title_text'>Resume</h6>
@@ -100,6 +100,11 @@ const Resume = () => {
                     </Grid>
 
                 </Grid>
+
+                <Grid item className='section_title top_30'>
+                    <span></span>
+                    <h6 className='section_title_text'>{resumeData.skill}</h6>
+                </Grid>  
             </Grid>
 
             {/* services  */}

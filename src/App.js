@@ -9,10 +9,16 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact/Contact";
 import Knowledge from "./pages/Knowledge/Knowledge";
 import Hobby from "./pages/Hobby/Hobby";
+import Helmet from 'react-helmet';
 
 function App() {
   return (
     <Container className={"top_40"}>
+      <Helmet>
+        <meta charSet="utf-8"/>
+        <title>Borameiy's Portfolio</title>
+        <link rel="canonical" href="https://borameiy.digital-teachers.com/"/>
+      </Helmet>
       <Grid container spacing={7}>
         <Grid item xs={12} sm={12} md={4} lg={3}>
           <Profile />

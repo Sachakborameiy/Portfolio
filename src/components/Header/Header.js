@@ -7,12 +7,13 @@ import resumeData from '../../utils/resumeData';
 import TelegramButton from '../Buttons/TelegramButton';
 import './Header.scss';
 import { useLocation } from 'react-router-dom';
+import {Button} from "@mui/material";
 
 
 const Header = () => {
 
     let location = useLocation();
-
+    
     return (
         <Navbar expand="lg" sticky="top" className="header">
             {/* Home Link  */}
@@ -56,7 +57,6 @@ const Header = () => {
                             {resumeData.socials[key].icon}
                         </a>
                     ))}
-                    {/* <CustomButton text={"Hire Me"}  icon={<Telegram/>}/> */}
                     <TelegramButton text={"Hire Me"}  icon={<Telegram style={{color: "#2481CC"}}/>}/>
                 </div>
             </Navbar.Collapse>

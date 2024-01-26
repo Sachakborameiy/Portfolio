@@ -1,6 +1,6 @@
-import { Facebook, Instagram, LinkedIn, WebOutlined  } from "@mui/icons-material";
+import { Instagram, LinkedIn, WebOutlined  } from "@mui/icons-material";
 import WebIcon from '@mui/icons-material/Web';
-import GitHubIcon from '@mui/icons-material/Web';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default {
     name: 'VUTH. Sachakborameiy',
@@ -12,12 +12,21 @@ export default {
     phone: ' +(855) 92 208 280',
     email: ' borameiy.vs@gmail.com',
     address: ' St. 05, Sangkat Chom Chao​ I, Khan Dangkor, Phnom Penh. ',
+    language: [
+        {
+            title: 'Languages',
+            lang: [
+                'Khmer: Mother Tongue',
+                'English: Good',
+            ]
+        }
+    ], 
 
     socials: {
         facebook: {
-            link: 'https://www.facebook.com/profile.php?id=100012410854694',
+            link: 'https://github.com/Sachakborameiy',
             text: 'My Facebook Profile',
-            icon: <Facebook style={{color: "#0866FF"}}/>,
+            icon: <GitHubIcon />,
         },
 
         instagram: {
@@ -32,7 +41,7 @@ export default {
         }
     },
 
-    aboutMe: `A full-stack developer with 3+ years of experience in developing recruiting system, e-commerce platform, analytic dashboard, file transfer, web scraping, API integration, and more`,
+    aboutMe: `A full-stack developer with 3+ years of experience in developing recruiting system, e-commerce platform, analytic dashboard, file transfer, web scraping, API integration, and 1 year of digital business development in developing conduct UAT, PVT testing of all assigned projects (Mobile + Internet Banking + Online Payment Integration) `,
     // aboutMe: `I dedicated and forward-thinking web developer with a keen interest in supporting the new generation of digital experiences. My journey in the world of web development has equipped me with a diverse set of skills and a genuine passion for creating innovative solutions.`,
     aboutMeSub: `I am proficient in front-end technologies such as ReactJs, SASS/CSS, Material UI and JavaScript, with a strong focus based on business requirement and user-friendly design. My expertise extends to popular frameworks like React and Vue.js, enabling me to build dynamic and interactive web applications that resonate with modern users. On the back end, I am well-versed in server-side scripting languages like Node.js and Javascript, coupled with a solid understanding of databases such as MongoDB and MySQL. This comprehensive skill set allows me to architect robust and scalable web solutions.`,
     // aboutMe: `Actually, the term role model means any person whose do the same or emulated whose behavior. It has many kinds such as ideas, behavior or action of any person. Role model also has a strong effect on what a person decides to become in the future. Unfortunately, my role model is Bruce lee. I tried my best to study his martial art for prevent myself and I remembered the first thing he said that “knowing is not enough we must to apply. Willing is not enough we must do”. Although I have knowledge I should be try to do it. Even, it’s not so well, but it is my willing that I completed. One more thing that I like from him is “If you love life, don't waste time, for time is what life is made up of.” I really support this idea. I should be created a new purpose in my life. The last one of my role model in the future is Jack Ma. He is a Chinese business magnate, investor, and philanthropist. Nowadays, he is a co-founder and executive chairman of Alibaba Group. He tried to study English language until he know the internet working, so he can make team to create the technology like the business website. For me I really want to make my own business too. I would be know about my skill course to create a website. Specially, make a good relationship with my team and customer.`,
@@ -42,8 +51,8 @@ export default {
 
     experiences: [
         {
-            title: 'Senior Digital Business Dev-PPCBank',
-            date: '2023-2024',
+            title: 'Senior Digital Business Dev - PPCBank',
+            date: 'Feb/2023-Jan/2024',
             description: 'Senior Digital Business Development, and implemented/Enhancement everything from order management, Provide general technical supports to all staffs, branches and occasionally customers on Mobile App and Internet Banking, Product prototype of all various options, upgrade implementation of Digital Banking',
             subDescription: [
                 "Conduct UAT, PVT testing of all assigned projects (Mobile + Internet Banking + Online Payment Integration)",
@@ -57,8 +66,8 @@ export default {
             ],
         },
         {
-            title: 'Senior Web Developer-MOC',
-            date: '2022-2023',
+            title: 'Senior Web Developer - Ministry of Commerce',
+            date: 'Dec/2021-Sep/2022',
             description: 'Senior Web Developer, and implemented everything from order management, worked a part of a multi-disciplinary team, and tasks as requested by Leader Project.',
             subDescription: [
                 "Execute unit and integration testing of the application",
@@ -76,8 +85,8 @@ export default {
             ],
         },
         {
-            title: 'Web Developer-Melo Restaurant',
-            date: '2020-2022',
+            title: 'Web Developer - Melo Restaurant',
+            date: 'Apr/2020-Dec/2021',
             description: 'Web Developer, and implemented everything from order management, worked a part of a multi-disciplinary team, and tasks as requested by Leader Project.',
             subDescription: [
                 "Wrote internal and external design specifications",
@@ -93,8 +102,8 @@ export default {
             ],
         },
         {
-            title: 'IT Training-MINAMI (CAMBODIA) CO.,LTD',
-            date: '2019-2020',
+            title: 'IT Training - MINAMI (CAMBODIA) CO.,LTD',
+            date: 'Dec/2019-Mar/2020',
             description: 'Web Developer, and implemented everything from order management, worked a part of a multi-disciplinary team, and tasks as requested by Leader Project.',
             subDescription: [
                 "Support IT productive (technical support)",
@@ -119,9 +128,9 @@ export default {
             title: "Certificated Bachelor Degree of English of Education at National University of Management. English Teacher as Business.",
         },
         {
-            school: "Koh Kong Hight School",
+            school: "Koh Kong High School",
             date: "2012-2015",
-            title: "Certificated Baccalaureate at Koh Kong Hight School, High School Students.",
+            title: "Certificated Baccalaureate at Koh Kong High School, High School Students.",
         },
     ],
 
@@ -177,6 +186,7 @@ export default {
         }
     ],
 
+    skill: "Skills & Tools",
     skills: [
         {
             title: "Front-End",
@@ -206,9 +216,9 @@ export default {
         {
             title: "Programming Languages",
             description: [
-                "HTML, CSS, SASS, Javascript/Jquery, Typescript, Material UI",
+                "HTML, CSS, SASS, Javascript/Jquery, Typescript",
                 "NodeJS",
-                "PHP, Laravel, Codeigniter",
+                "PHP",
                 "C++, C#, Java"
             ]
         },
@@ -218,6 +228,7 @@ export default {
                 "Bootstrap, Tailwind CSS, Material UI",
                 "ReactJs, VueJs, NextJs",
                 "ExpressJs, Apollo GraphQL",
+                "Laravel, Codeigniter"
             ]
         },
         {
@@ -244,7 +255,7 @@ export default {
             description: [
                 "Linux",
                 "Docker",
-                "AWS Service",
+                "WSO2 Service",
                 "Tomcat Service",
             ]
         },
@@ -253,7 +264,6 @@ export default {
             description: [
                 "Agile Mindset",
                 "Agile Methodologies",
-                "Srum or DevOps"
             ]
         },
         // {
@@ -274,7 +284,7 @@ export default {
 
     hobbies: [
         {
-            title: "Soft Skill",
+            title: "Hobbies",
             description: [
                 "Self-Motivated and Optimistic.",
                 "High Creative of System up to date.",
@@ -287,7 +297,7 @@ export default {
             ]
         },
         {
-            title: "Entertainment",
+            title: "Interests",
             description: [
                 "Travelling: Mountain, Seaside",
                 "Musician: Play Piano, Guitar..",

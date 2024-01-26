@@ -1,11 +1,10 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+import { Typography, List, ListItem } from '@mui/material';
 import './Profile.scss';
 import resumeData from '../../utils/resumeData';
 import { GetApp, PersonOutlineOutlined } from '@mui/icons-material';
 import { TimelineContent, TimelineItem } from '@mui/lab';
 import CustomTimeLine, {CustomTimeLineSeparator} from '../Timeline/CustomTimeLine';
-import CustomButton from '../Buttons/Button';
 
 const CustomTimeLineItem = ({ title, text, link }) => {
 
@@ -51,11 +50,31 @@ const Profile = ({ text, icon }) => {
                     <CustomTimeLineItem title='Email' text={resumeData.email}/>
                     <CustomTimeLineItem title='Phone' text={resumeData.phone}/>
                     <CustomTimeLineItem title='Address' text={resumeData.address}/>
+                    <div className='language'>
+                        {
+                            resumeData.language.map((languages) => (
+                                <Typography>
+                                    <Typography className='timeline_title'>{ languages.title }</Typography>
+                                    <Typography>
+                                        <List sx={{ listStyleType: 'disc', pl: 2 }}>
+                                            {
+                                                languages.lang.map((l, index) => (
+                                                    <ListItem key={index} sx={{ display: 'list-item', color: 'red'}} dense disablePadding> 
+                                                        <Typography sx={{ fontSize: '13.5px', fontWeight: '600', color: "darkslategray"}}>{l}</Typography>
+                                                    </ListItem>
+                                                ))
+                                            }
+                                        </List>
+                                    </Typography>
+                                </Typography>
+                            ))
+                        }
+                    </div>
                 </CustomTimeLine>
                 <br/>
-                <div className={'button_container'}>
+                {/* <div className={'button_container'}>
                     <CustomButton text={'Download My Bio'} icon={<GetApp/>} />
-                </div>
+                </div> */}
 
             </div>
         </div>

@@ -19,7 +19,7 @@ const Hobby = () => {
                                     <TimelineItem>
                                         <CustomTimeLineSeparator/>
                                         <TimelineContent key={index}>
-                                            <Typography className='timeline_title'>{ hobby.title }</Typography>
+                                            <Typography className='timeline_title' style={{textTransform: 'uppercase'}}>{ hobby.title }</Typography>
                                             <Typography>
                                                 <List sx={{ listStyleType: 'disc', pl: 2 }}>
                                                     {
