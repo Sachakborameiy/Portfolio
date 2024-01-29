@@ -1,10 +1,11 @@
 import React from 'react';
-import { Typography, List, ListItem } from '@mui/material';
+import { Typography, List, ListItem, Button } from '@mui/material';
 import './Profile.scss';
 import resumeData from '../../utils/resumeData';
 import { GetApp, PersonOutlineOutlined } from '@mui/icons-material';
 import { TimelineContent, TimelineItem } from '@mui/lab';
 import CustomTimeLine, {CustomTimeLineSeparator} from '../Timeline/CustomTimeLine';
+import CustomButton from '../Buttons/Button';
 
 const CustomTimeLineItem = ({ title, text, link }) => {
 
@@ -30,7 +31,7 @@ const CustomTimeLineItem = ({ title, text, link }) => {
     );
 };
 
-const Profile = ({ text, icon }) => {
+const Profile = () => {
 
     return (
         <div className='profile container_shadow'>
@@ -72,9 +73,9 @@ const Profile = ({ text, icon }) => {
                     </div>
                 </CustomTimeLine>
                 <br/>
-                {/* <div className={'button_container'}>
-                    <CustomButton text={'Download My Bio'} icon={<GetApp/>} />
-                </div> */}
+                <div className={'button_container'}>
+                    <CustomButton  text={'Download My CV'} icon={<GetApp/>} />
+                </div>
 
             </div>
         </div>
