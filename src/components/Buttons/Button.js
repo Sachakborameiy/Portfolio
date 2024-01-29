@@ -6,10 +6,10 @@ import { saveAs } from 'file-saver';
 const CustomButton = ({ text, icon }) => {
 
     const handleDownload = () => {
-        const pdfBlob = new Blob(['This is the content of the PDF file.'], { type: 'CV_Vuth_Sachakborameiy_2024.pdf' });
+        const pdfBlob = new Blob(['This is the content of the PDF file.'], { type: 'application/pdf' });
     
         // Trigger download using FileSaver
-        saveAs(pdfBlob, 'CV_Vuth_Sachakborameiy_2024.pdf');
+        saveAs("./CV_Vuth_Sachakborameiy_2024.pdf",'./CV_Vuth_Sachakborameiy_2024.pdf');
     };
     
     return (
