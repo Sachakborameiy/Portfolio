@@ -73,7 +73,7 @@ const Profile = () => {
                     </div>
                 </CustomTimeLine>
                 <br/>
-                <div className={'button_container'}>
+                <div className={'button_container'} style={{marginTop: "-3em !important"}}>
                     <CustomButton  text={'Download My CV'} icon={<GetApp/>} />
                 </div>
 
