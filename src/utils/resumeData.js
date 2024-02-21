@@ -41,9 +41,9 @@ export default {
         }
     },
 
-    aboutMe: `A full-stack developer with 3+ years of experience in developing recruiting system, e-commerce platform, analytic dashboard, file transfer, web scraping, API integration, and 1 year of digital business development in developing conduct UAT, PVT testing of all assigned projects (Mobile + Internet Banking + Online Payment Integration) `,
+    aboutMe: `A full-stack developer with 3+ years of experience in developing recruiting system, e-commerce platform, analytic dashboard, file transfer, web scraping, API integration, and 1 year of digital business development in developing conduct UAT, PVT testing of all assigned projects (Mobile + Internet Banking + Online Payment Integration).`,
     // aboutMe: `I dedicated and forward-thinking web developer with a keen interest in supporting the new generation of digital experiences. My journey in the world of web development has equipped me with a diverse set of skills and a genuine passion for creating innovative solutions.`,
-    aboutMeSub: `I am proficient in front-end technologies such as ReactJs, SASS/CSS, Material UI and JavaScript, with a strong focus based on business requirement and user-friendly design. My expertise extends to popular frameworks like React and Vue.js, enabling me to build dynamic and interactive web applications that resonate with modern users. On the back end, I am well-versed in server-side scripting languages like Node.js and Javascript, coupled with a solid understanding of databases such as MongoDB and MySQL. This comprehensive skill set allows me to architect robust and scalable web solutions.`,
+    aboutMeSub: `I am proficient in front-end technologies such as ReactJs, SASS/CSS/Tailwind CSS/Material UI and JavaScript, with a strong focus based on business requirement and user-friendly design. My expertise extends to popular frameworks like React and Vue.js, enabling me to build dynamic and interactive web applications that resonate with modern users. On the back end, I am well-versed in server-side scripting languages like Node.js and Javascript, coupled with a solid understanding of databases such as MongoDB and MySQL. This comprehensive skill set allows me to architect robust and scalable web solutions.`,
     // aboutMe: `Actually, the term role model means any person whose do the same or emulated whose behavior. It has many kinds such as ideas, behavior or action of any person. Role model also has a strong effect on what a person decides to become in the future. Unfortunately, my role model is Bruce lee. I tried my best to study his martial art for prevent myself and I remembered the first thing he said that “knowing is not enough we must to apply. Willing is not enough we must do”. Although I have knowledge I should be try to do it. Even, it’s not so well, but it is my willing that I completed. One more thing that I like from him is “If you love life, don't waste time, for time is what life is made up of.” I really support this idea. I should be created a new purpose in my life. The last one of my role model in the future is Jack Ma. He is a Chinese business magnate, investor, and philanthropist. Nowadays, he is a co-founder and executive chairman of Alibaba Group. He tried to study English language until he know the internet working, so he can make team to create the technology like the business website. For me I really want to make my own business too. I would be know about my skill course to create a website. Specially, make a good relationship with my team and customer.`,
     
     workExperience: 'Work Experiences',
@@ -90,15 +90,13 @@ export default {
             description: 'Web Developer, and implemented everything from order management, worked a part of a multi-disciplinary team, and tasks as requested by Leader Project.',
             subDescription: [
                 "Wrote internal and external design specifications",
-                "Performed maintenance and updates to existing client Website",
-                "Involved in creating a comparison site from scratch",
-                "Helped end users to solve operating problems",
-                "Participated in brainstorming sessions to come up with ideas",
-                "Documented software and technical specifications",
+                "Documented software and technicla speicifications.",
+                "E-commerce & Trading, Gamming website",
+                "Stock trading dashboard",
                 "Worked on multiple projects simultaneously to a high standard",
                 "Escalated operational issues to senior management",
-                "Involved in a project to develop a large online gaming website",
-                "Addressed cross-broswer compatibility issues",
+                "Worked on core Javascript, frontend and related languages via business requirements such as codeigniter, HTML/CSS/Booststrap Javascript, Laravel, mysql.",
+                
             ],
         },
         {
@@ -145,10 +143,10 @@ export default {
                 "Develop and maintain the system integration between CAB bank and partners and/or other channels",
                 "Work with vendor’s technical supports on issues rectification",
                 "Manage and ensure the digital channel systems",
-                "Develop and contribute API interface for system integration with new core banking (Mobile Banking, Internet banking, Western Union, Bankong, Fast Service, KHQR, BPI, WING etc.)",
+                "Develop and contribute API interface for system integration with new core banking (Mobile Banking, Internet banking, Western Union, Bankong, Fast Service, KHQR, etc.)",
                 "Develop and manage on API interface integration for e-wallet system",
                 "Strictly involve developing on new mobile and internet banking system as well as enhance on existing Internet/Mobile Banking application",
-                "Keep abreast and enhance of the latest technology for mobile/internet applications. ",
+                // "Keep abreast and enhance of the latest technology for mobile/internet applications. ",
                 "Facilitate in existing and ongoing projects with National Bank Cambodia.",
                 "Execute related to Java Spring, C#, HTML, CSS, JQUERY, JAVASCRIPT Plus.",
                 "Maintenance via APIs (SOAP, REST, XML)",
@@ -219,12 +217,12 @@ export default {
                 "HTML, CSS, SASS, Javascript/Jquery, Typescript",
                 "NodeJS",
                 "PHP",
-                "C++, C#, Java"
+                "C++, C#, Java Spring Boot"
             ]
         },
         {
             title: "Frameworks & Libraries",
-            description: [
+            description: [ 
                 "Bootstrap, Tailwind CSS, Material UI",
                 "ReactJs, VueJs, NextJs",
                 "ExpressJs, Apollo GraphQL",
@@ -236,7 +234,6 @@ export default {
             description: [
                 "MongoDB",
                 "MySQL",
-                "HeidiSQL"
 
             ]
         },
@@ -245,6 +242,7 @@ export default {
             description: [
                 "Git, GitHub, Bitbucket",
                 "Visual Studio Code",
+                "IntelliJ IDEA",
                 "Jira",
                 "Postman",
                 "Google Workspace"
@@ -253,7 +251,6 @@ export default {
         {
             title: "Platforms",
             description: [
-                "Linux",
                 "Docker",
                 "WSO2 Service",
                 "Tomcat Service",

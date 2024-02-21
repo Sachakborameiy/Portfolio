@@ -7,7 +7,6 @@ import resumeData from '../../utils/resumeData';
 import TelegramButton from '../Buttons/TelegramButton';
 import './Header.scss';
 import { useLocation } from 'react-router-dom';
-import {Button} from "@mui/material";
 
 
 const Header = () => {
