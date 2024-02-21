@@ -217,7 +217,7 @@ export default {
                 "HTML, CSS, SASS, Javascript/Jquery, Typescript",
                 "NodeJS",
                 "PHP",
-                "C++, C#, Java Spring Boot"
+                "C++, Java Spring Boot"
             ]
         },
         {
